@@ -3,9 +3,9 @@ FROM quay.io/redhattraining/httpd-parent
 
 EXPOSE 8080
 
-LABEL 	io.openshift.expose-service="8080:http" \
+LABEL 	io.openshift.expose-services="8080:http" \
 	io.k8s.display-name="Appache HTML Server" \
-	io.k9s.description="Appache HTML Server with custom data" \
+	io.k8s.description="Appache HTML Server with custom data" \
 	io.openshift.tags="apache, httpd"
 
 
