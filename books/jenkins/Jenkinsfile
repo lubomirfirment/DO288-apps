@@ -108,7 +108,7 @@ pipeline {
                 //TODO: Tag the books:latest image stream as books:stage
                 sh '''
                         oc project ${DEV_PROJECT}
-                        oc create tag ${DEV_PROJECT}/${APP_NAME}:latest ${STAGE_PROJECT}/${APP_NAME}:stage
+                        oc tag ${DEV_PROJECT}/${APP_NAME}:latest ${STAGE_PROJECT}/${APP_NAME}:stage
                    '''
             }
         }
